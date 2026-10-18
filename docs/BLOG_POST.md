@@ -1,6 +1,6 @@
 # How We Eliminated 86% of Software Vulnerability Alerts with FalkorDB and Graph-Native AI Agents
 
-**Author:** Nishant Kumar  
+**Author:** Nishant Kumar Sah
 **Project:** KEYSTONE — Graph-Native Software Vulnerability Remediation Agent  
 **Hackathon Track:** Track 01: Agents That Act on Connected Data  
 **GitHub Repository:** [https://github.com/Nishant-Kumar-007/KeyStone](https://github.com/Nishant-Kumar-007/KeyStone)  
