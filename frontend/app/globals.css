@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090a0f;
+  --surface: #11131a;
+  --surface-border: #282c3c;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Data-dense technical aesthetics */
+.technical-border {
+  border: 1px solid var(--surface-border);
+}
+
+.technical-surface {
+  background-color: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+}
+
+/* Code & monospace styling */
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252836;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3f54;
+}

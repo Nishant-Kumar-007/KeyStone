@@ -1,0 +1,46 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:7f1190bc-65ad-4903-81e0-638bc9119934",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-14T12:00:00Z",
+    "component": {
+      "bom-ref": "pkg:npm/acme-dashboard@3.1.0",
+      "type": "application",
+      "name": "acme-dashboard",
+      "version": "3.1.0",
+      "purl": "pkg:npm/acme-dashboard@3.1.0"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:npm/axios@0.21.1",
+      "type": "library",
+      "name": "axios",
+      "version": "0.21.1",
+      "purl": "pkg:npm/axios@0.21.1"
+    },
+    {
+      "bom-ref": "pkg:npm/follow-redirects@1.14.7",
+      "type": "library",
+      "name": "follow-redirects",
+      "version": "1.14.7",
+      "purl": "pkg:npm/follow-redirects@1.14.7"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:npm/acme-dashboard@3.1.0",
+      "dependsOn": [
+        "pkg:npm/axios@0.21.1"
+      ]
+    },
+    {
+      "ref": "pkg:npm/axios@0.21.1",
+      "dependsOn": [
+        "pkg:npm/follow-redirects@1.14.7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "catalogVersion": "2026.10.14",
+  "vulnerabilities": {
+    "CVE-2021-44228": {
+      "cveID": "CVE-2021-44228",
+      "vendorProject": "Apache",
+      "product": "Log4j",
+      "vulnerabilityName": "Apache Log4j2 Remote Code Execution Vulnerability",
+      "dateAdded": "2021-12-10",
+      "shortDescription": "Apache Log4j2 contains an untrusted deserialization vulnerability that allows for remote code execution.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    "CVE-2021-45046": {
+      "cveID": "CVE-2021-45046",
+      "vendorProject": "Apache",
+      "product": "Log4j",
+      "vulnerabilityName": "Apache Log4j2 Denial of Service and RCE Vulnerability",
+      "dateAdded": "2021-12-15",
+      "shortDescription": "Apache Log4j2 Thread Context Lookup vulnerability allowing denial of service and potential RCE.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    },
+    "CVE-2022-22965": {
+      "cveID": "CVE-2022-22965",
+      "vendorProject": "VMware",
+      "product": "Spring Framework",
+      "vulnerabilityName": "Spring Framework Remote Code Execution Vulnerability (Spring4Shell)",
+      "dateAdded": "2022-04-04",
+      "shortDescription": "Spring Framework contains an untrusted data binding flaw allowing remote code execution.",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "knownRansomwareCampaignUse": "Known"
+    }
+  }
+}

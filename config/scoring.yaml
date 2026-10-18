@@ -1,0 +1,31 @@
+# Risk Scoring Configuration for KEYSTONE
+# Formula:
+# Score = (CVSS_base * cvss_weight)
+#       + (is_kev ? kev_boost : 0.0)
+#       + (epss * epss_weight)
+#       + (depth_penalty_factor * depth_weight)
+#       + (min(dependents_count, 10) * dependents_weight)
+
+weights:
+  cvss_weight: 0.35        # Normalized CVSS (0-10) scaled contribution
+  kev_boost: 4.0           # Substantial risk increase if actively exploited in the wild (CISA KEV)
+  epss_weight: 2.5         # EPSS probability (0.0 - 1.0) scaled contribution
+  depth_weight: 1.0        # Weight applied to path exposure factor
+  dependents_weight: 0.15  # Upstream blast-radius penalty per dependent project
+
+factors:
+  # Depth attenuation: Direct dependencies have maximum reach factor 1.0;
+  # transitive dependencies attenuate based on distance: 1.0 / (1.0 + 0.25 * (depth - 1))
+  depth_decay_rate: 0.25
+  direct_scope_bonus: 0.5
+
+thresholds:
+  critical: 8.5
+  high: 7.0
+  medium: 4.0
+  low: 0.0
+
+disclaimers:
+  call_graph_reachability: >
+    KEYSTONE computes exposure and blast radius along the declared and resolved dependency graph.
+    It does not perform runtime call-graph reachability or bytecode execution path analysis.

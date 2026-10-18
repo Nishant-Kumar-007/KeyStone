@@ -1,0 +1,59 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:5d88921a-129b-46cf-8240-692ab3e89021",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-14T12:00:00Z",
+    "component": {
+      "bom-ref": "pkg:maven/com.acme/billing-portal@1.8.0",
+      "type": "application",
+      "name": "billing-portal",
+      "version": "1.8.0",
+      "purl": "pkg:maven/com.acme/billing-portal@1.8.0"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter@2.5.4",
+      "type": "library",
+      "name": "spring-boot-starter",
+      "version": "2.5.4",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@2.5.4"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-context@5.3.17",
+      "type": "library",
+      "name": "spring-context",
+      "version": "5.3.17",
+      "purl": "pkg:maven/org.springframework/spring-context@5.3.17"
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework/spring-beans@5.3.17",
+      "type": "library",
+      "name": "spring-beans",
+      "version": "5.3.17",
+      "purl": "pkg:maven/org.springframework/spring-beans@5.3.17"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:maven/com.acme/billing-portal@1.8.0",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-starter@2.5.4"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter@2.5.4",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-context@5.3.17"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-context@5.3.17",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-beans@5.3.17"
+      ]
+    }
+  ]
+}

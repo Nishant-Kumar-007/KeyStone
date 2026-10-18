@@ -1,0 +1,33 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:9988aa11-bb22-cc33-dd44-ee55ff667788",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-14T12:00:00Z",
+    "component": {
+      "bom-ref": "pkg:npm/secure-auth-gateway@1.0.0",
+      "type": "application",
+      "name": "secure-auth-gateway",
+      "version": "1.0.0",
+      "purl": "pkg:npm/secure-auth-gateway@1.0.0"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:npm/zod@3.22.4",
+      "type": "library",
+      "name": "zod",
+      "version": "3.22.4",
+      "purl": "pkg:npm/zod@3.22.4"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:npm/secure-auth-gateway@1.0.0",
+      "dependsOn": [
+        "pkg:npm/zod@3.22.4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "CVE-2021-44228": {
+    "id": "CVE-2021-44228",
+    "aliases": ["GHSA-jfh8-c2jp-5v3q"],
+    "summary": "Apache Log4j2 JNDI Remote Code Execution (Log4Shell)",
+    "details": "Apache Log4j2 versions 2.0-beta9 through 2.14.1 JNDI features do not protect against attacker-controlled LDAP and other JNDI related endpoints.",
+    "severity": "CRITICAL",
+    "cvss_score": 10.0,
+    "ecosystem": "Maven",
+    "affected_packages": [
+      {
+        "name": "org.apache.logging.log4j/log4j-core",
+        "purl_prefix": "pkg:maven/org.apache.logging.log4j/log4j-core",
+        "affected_versions": ["2.14.1", "2.14.0", "2.13.3"],
+        "fixed_versions": ["2.17.1", "2.15.0", "2.16.0"]
+      }
+    ],
+    "published": "2021-12-10T10:00:00Z"
+  },
+  "CVE-2021-45046": {
+    "id": "CVE-2021-45046",
+    "aliases": ["GHSA-7rjr-3q55-vv33"],
+    "summary": "Apache Log4j2 Thread Context Lookup Remote Code Execution",
+    "details": "Fix for CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations.",
+    "severity": "CRITICAL",
+    "cvss_score": 9.0,
+    "ecosystem": "Maven",
+    "affected_packages": [
+      {
+        "name": "org.apache.logging.log4j/log4j-core",
+        "purl_prefix": "pkg:maven/org.apache.logging.log4j/log4j-core",
+        "affected_versions": ["2.14.1", "2.15.0"],
+        "fixed_versions": ["2.17.1", "2.16.0"]
+      }
+    ],
+    "published": "2021-12-14T12:00:00Z"
+  },
+  "CVE-2022-22965": {
+    "id": "CVE-2022-22965",
+    "aliases": ["GHSA-36p3-wjmg-h94x"],
+    "summary": "Spring Framework RCE via Data Binding on JDK 9+ (Spring4Shell)",
+    "details": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding.",
+    "severity": "CRITICAL",
+    "cvss_score": 9.8,
+    "ecosystem": "Maven",
+    "affected_packages": [
+      {
+        "name": "org.springframework/spring-beans",
+        "purl_prefix": "pkg:maven/org.springframework/spring-beans",
+        "affected_versions": ["5.3.17", "5.3.16"],
+        "fixed_versions": ["5.3.18", "5.2.20"]
+      }
+    ],
+    "published": "2022-04-01T15:00:00Z"
+  },
+  "CVE-2022-0155": {
+    "id": "CVE-2022-0155",
+    "aliases": ["GHSA-pw2r-vq6v-hr8c"],
+    "summary": "Exposure of sensitive information in follow-redirects via cross-domain redirects",
+    "details": "follow-redirects forwards Authorization header on redirect to different origin hosts.",
+    "severity": "HIGH",
+    "cvss_score": 7.5,
+    "ecosystem": "npm",
+    "affected_packages": [
+      {
+        "name": "follow-redirects",
+        "purl_prefix": "pkg:npm/follow-redirects",
+        "affected_versions": ["1.14.7", "1.14.6"],
+        "fixed_versions": ["1.14.8"]
+      }
+    ],
+    "published": "2022-01-10T14:00:00Z"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CVE-2022-0155",
+    "aliases": [
+      "GHSA-pw2r-vq6v-hr8c"
+    ],
+    "summary": "Exposure of sensitive information in follow-redirects via cross-domain redirects",
+    "details": "follow-redirects forwards Authorization header on redirect to different origin hosts.",
+    "severity": "HIGH",
+    "cvss_score": 7.5,
+    "ecosystem": "npm",
+    "affected_packages": [
+      {
+        "name": "follow-redirects",
+        "purl_prefix": "pkg:npm/follow-redirects",
+        "affected_versions": [
+          "1.14.7",
+          "1.14.6"
+        ],
+        "fixed_versions": [
+          "1.14.8"
+        ]
+      }
+    ],
+    "published": "2022-01-10T14:00:00Z",
+    "kev": false,
+    "epss": 0.1852,
+    "fixed_in": [
+      "1.14.8"
+    ]
+  }
+]

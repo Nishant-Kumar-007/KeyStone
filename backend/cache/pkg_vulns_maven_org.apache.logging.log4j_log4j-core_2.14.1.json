@@ -1,0 +1,69 @@
+[
+  {
+    "id": "CVE-2021-44228",
+    "aliases": [
+      "GHSA-jfh8-c2jp-5v3q"
+    ],
+    "summary": "Apache Log4j2 JNDI Remote Code Execution (Log4Shell)",
+    "details": "Apache Log4j2 versions 2.0-beta9 through 2.14.1 JNDI features do not protect against attacker-controlled LDAP and other JNDI related endpoints.",
+    "severity": "CRITICAL",
+    "cvss_score": 10.0,
+    "ecosystem": "Maven",
+    "affected_packages": [
+      {
+        "name": "org.apache.logging.log4j/log4j-core",
+        "purl_prefix": "pkg:maven/org.apache.logging.log4j/log4j-core",
+        "affected_versions": [
+          "2.14.1",
+          "2.14.0",
+          "2.13.3"
+        ],
+        "fixed_versions": [
+          "2.17.1",
+          "2.15.0",
+          "2.16.0"
+        ]
+      }
+    ],
+    "published": "2021-12-10T10:00:00Z",
+    "kev": true,
+    "epss": 0.97542,
+    "fixed_in": [
+      "2.17.1",
+      "2.15.0",
+      "2.16.0"
+    ]
+  },
+  {
+    "id": "CVE-2021-45046",
+    "aliases": [
+      "GHSA-7rjr-3q55-vv33"
+    ],
+    "summary": "Apache Log4j2 Thread Context Lookup Remote Code Execution",
+    "details": "Fix for CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations.",
+    "severity": "CRITICAL",
+    "cvss_score": 9.0,
+    "ecosystem": "Maven",
+    "affected_packages": [
+      {
+        "name": "org.apache.logging.log4j/log4j-core",
+        "purl_prefix": "pkg:maven/org.apache.logging.log4j/log4j-core",
+        "affected_versions": [
+          "2.14.1",
+          "2.15.0"
+        ],
+        "fixed_versions": [
+          "2.17.1",
+          "2.16.0"
+        ]
+      }
+    ],
+    "published": "2021-12-14T12:00:00Z",
+    "kev": true,
+    "epss": 0.8841,
+    "fixed_in": [
+      "2.17.1",
+      "2.16.0"
+    ]
+  }
+]
