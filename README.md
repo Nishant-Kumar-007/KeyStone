@@ -7,6 +7,7 @@
 [![Cytoscape.js](https://img.shields.io/badge/Cytoscape.js-DAG%20Visualization-E11D48?style=for-the-badge)](https://js.cytoscape.org)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Official%20Python%20SDK-6366F1?style=for-the-badge)](https://modelcontextprotocol.io)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Nishant-Kumar-007/KeyStone&root-directory=frontend)
+[![Live Demo on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel%20Production-10B981?style=for-the-badge&logo=vercel)](https://keystone-frontend-53fb6oy7s-nishantksah005-1880s-projects.vercel.app)
 
 > **Eliminating Software Supply Chain Alert Fatigue**: Turning hundreds of scattered vulnerability alerts into a short, proven list of direct upgrades, verified with native before-and-after what-if simulation proofs on FalkorDB before drafting human-approved fixes.
 
